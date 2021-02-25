@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/easion.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="~/assets/js/chart-js-config.js"></script>
+    <title>Easion - Bootstrap Dashboard Template</title>
+</head>
+
+<body>
+    <div class="dash">
+
+        <div class="dash-app">
+            <header class="dash-toolbar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Rehber Uygumalası</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="@Url.Action("Index", "Home")">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Index", "Rapor")">Rapor</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+            </header>
+            <main class="dash-content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="card easion-card">
+                                <div class="card-header">
+                                    <div class="easion-card-icon">
+                                        <i class="fas fa-table"></i>
+                                    </div>
+                                    <div class="easion-card-title">Rapor</div>
+
+                                </div>
+                                <div class="card-body ">
+                                    <table class="table table-hover table-in-card">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Konum</th>
+                                                <th scope="col">Sayı</th>
+                                                <th scope="col">Kisi</th>
+                                                <th scope="col">Telefon</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="rapor_list">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+  
+
+
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="~/assets/js/easion.js"></script>
+    <script>
+        $(document).ready(function () {     
+            
+            konum_rapor();
+       
+        });
+
+    </script>
+
+</body>
+
+</html>
