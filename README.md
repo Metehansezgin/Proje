@@ -26,10 +26,10 @@ GET api/iletisim/rapor_telefon/{veri}   -->İstenen konumdaki teledon sayısı.<
 GET api/iletisim/rapor_konum_list       -->Tüm Konumdaki bilgileri getirir.<br><br>
 
 
-Kişi eklemek için kullanılacak json post veri modeli {"Ad":"","Soyad":"","Firma":""}<br>
-Kişi güncellemek için kullanılacak json post veri modeli {"UUID":"","Ad":"","Soyad":"","Firma":""}<br><br>
+Kişi eklemek için kullanılacak json post veri modeli {"ad":"","soyad":"","firma":""}<br>
+Kişi güncellemek için kullanılacak json post veri modeli {"uuid":"","ad":"","soyad":"","firma":""}<br><br>
         
-İletişim eklemek için kullanılacak json veri modeli {"KID":"","Telefon":"","Email":"","Konum":""} <br>     
-İletişim güncellemek için kullanılacak json veri modeli {"IID":"","KID":"","Telefon":"","Email":"","Konum":""}<br>
+İletişim eklemek için kullanılacak json veri modeli {"kid":"","telefon":"","email":"","konum":""} <br>     
+İletişim güncellemek için kullanılacak json veri modeli {"iid":"","kid":"","telefon":"","email":"","konum":""}<br>
     
       
