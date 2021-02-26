@@ -29,7 +29,7 @@ GET api/iletisim/rapor_konum_list       -->Tüm Konumdaki bilgileri getirir.<br>
 Kişi eklemek için kullanılacak json post veri modeli {"ad":"","soyad":"","firma":""}<br>
 Kişi güncellemek için kullanılacak json post veri modeli {"uuid":"","ad":"","soyad":"","firma":""}<br><br>
         
-İletişim eklemek için kullanılacak json veri modeli {"kid":"","telefon":"","email":"","konum":""}<br>     
+İletişim eklemek için kullanılacak json veri modeli {"kid":"","telefon":"","email":"","konum":""}
 İletişim güncellemek için kullanılacak json veri modeli {"iid":"","kid":"","telefon":"","email":"","konum":""}<br>
     
       
