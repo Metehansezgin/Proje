@@ -10,7 +10,7 @@ namespace Proje.DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=METEHANPC\SQLEXPRESS;Initial Catalog=RehberProjesi;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"");
         }
         public DbSet<Kisiler> Kisiler { get; set; }
         public DbSet<Iletisim> Iletisim { get; set; }
